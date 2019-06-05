@@ -6,8 +6,12 @@
   "directories": {
     "test": "test"
   },
+  "watch": {
+    "test": "*"
+  },
   "scripts": {
-    "test": "mocha -R mocha-multi --reporter-options nyan=-,json=.results.json"
+    "watch": "npm-watch test",
+    "test": "mocha -R mocha-multi --reporter-options nyan=-,json=.results.json --bail"
   },
   "repository": {
     "type": "git",
